@@ -1,0 +1,17 @@
+astroid==2.4.2
+beautifulsoup4==4.9.3
+bs4==0.0.1
+chromedriver==2.24.1
+chromedriver-binary==88.0.4324.27.1
+colorama==0.4.4
+isort==5.7.0
+lazy-object-proxy==1.4.3
+mccabe==0.6.1
+pylint==2.6.0
+pyttk==0.3.2
+selenium==3.141.0
+six==1.15.0
+soupsieve==2.1
+toml==0.10.2
+urllib3==1.26.2
+wrapt==1.12.1
