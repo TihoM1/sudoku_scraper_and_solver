@@ -67,7 +67,6 @@ class GameBoard:
         self.sudoku_table = WebScraper().find_element_by_id(self.soup, "table", "puzzle_grid" )
         self.fields_with_numbers = WebScraper().find_all_elements_with_a_value(self.sudoku_table,
         "input", True)
-        self.starting_numbers = []
     def fill_matrix_with_starting_values(self):
         """
         Fills matrix with starting numbers
@@ -76,7 +75,6 @@ class GameBoard:
             coordinates = WebScraper().find_parents_id(i, 'td' ).replace('c','')
             row = int(coordinates[0])
             column = int(coordinates[1])
-            self.starting_numbers.append((row, column))
             self.gameboard_matrix[row][column] = int(i['value'])
     def fill_text_fields_with_values(self):
         """
